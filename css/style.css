@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+      font-family: "Maven Pro", sans-serif;
+
+}
+
+.services {
+    /* background-color: #d1cfcf; */
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    /* background-color: tomato; */
+}
+
+.services-img {
+    width: 48%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer {
+    text-align: center;
+    background-color: rgba(220, 20, 60, 0.43);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    /* padding-top: 50px; */
+}
+.services-img:hover .layer {
+    opacity: 1;
+}
+.services-img:hover img{
+    transform: scale(1.05);
+}
+.inner {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layer h3 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.layer p {
+    font-size: 17.6px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.layer a {
+    text-decoration: none;
+    background-color: transparent;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    line-height: 67.2px;
+    font-size: 56px;
+    font-weight: 300;
+    margin: 0 0 0 24px;
+}
+
+.header p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.services-img img {
+    width: 100%;
+    display:  block;
+    transition: all .5s;
+}
+
+.services-content {
+    width: 48%;
+    float: right;
+    /* margin-top: 30px; */
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+.list li {
+    border-bottom: solid 1px rgb(223, 223, 223);
+}
+
+.list-icon {
+    width: 10%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-icon i{
+    color: #c85716;
+}
+
+.list-content {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list-content h3 {
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1199px) {
+    .services-content {
+        margin-top: 0;
+    }
+    .services-img {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .services-content {
+        width: 100%;
+    }
+    .services-img {
+        width: 100%;
+    }
+}
